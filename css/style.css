@@ -1,0 +1,992 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Appetite New', 'Museo Sans Cyrl 100', 'Museo Sans Cyrl 900', 'Museo Sans Cyrl 500', 'Museo Sans Cyrl 300', 'Museo Sans Cyrl 700';
+}
+body {
+overflow-x: hidden;
+}
+header {
+    display: block;
+    position: relative;
+    height: 55.260vw;
+    width: 100vw;
+    background: url('../img/bg.webp') center center/cover no-repeat;
+    z-index: 0;
+}
+.menu {
+    display: block; 
+    position: relative;
+
+    /* width: 1560px; */
+    width: 81.25vw;
+    margin-left: 9.375vw;
+    /* height: 60px; */
+    height: 3.125vw;
+    /* border-radius: 5px; */
+    border-radius: 0.260vw;
+    background-color: #ffffff;
+    
+}
+.menu::before {
+    display: block; 
+    position: absolute;
+    content: '';
+    /* width: 1523px;
+    height: 61px; */
+    width: 79.323vw;
+	height: 3.177vw;
+    /* border-radius: 5px; */
+    border-radius: 0.260vw;
+    background-color: #ffffff;
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    /* margin-top: 8px; */
+    margin-top: 0.417vw;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.menu .menu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 23px 35px 22px 36px;  */
+    margin-top: auto;
+    padding: 1.198vw 1.823vw 1.146vw 1.875vw; 
+    list-style-type: none;
+    /* height: 60px; */
+    /* height: 3.125vw; */
+    line-height: 0.68;
+    
+}
+.menu .menu_item {
+    /* margin-top: 0; */
+    /* height: 15px; */
+    /* height: 0.781vw; */
+    /* height: 0.781vw; */
+    line-height: 10%;
+}
+.menu .menu_item .menu_link {
+    margin-top: 0;
+    color: #282828;
+    /* font-size: 15px; */
+    font-size: 0.781vw;
+    font-weight: 400;
+    /* letter-spacing: 0.75px; */
+    letter-spacing: 0.039vw;
+    font-family: "Museo Sans Cyrl 300";
+    cursor: pointer;
+    text-decoration: none;
+    /* line-height: 90%; */
+}
+#active{
+    font-family: "Museo Sans Cyrl 700";
+}
+.hamburger {
+    display: none;
+    position: absolute;
+    /* right: 64px; */
+    right: 9.375vw;
+    top: 8%;
+    transform: translateY(-50%);
+    width: 26px;
+    /* width: 1.354vw; */
+    height: 12px;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #282828;
+    margin-bottom: 3px;
+    /* margin-bottom: 0.156vw; */
+    transition: 0.5s all;
+}
+.hamburger_active span:nth-child(1) {
+    margin-bottom: -2px;
+    transform: translateY(3px) rotate(-45deg);  
+}
+.hamburger_active span:nth-child(2) {
+    display: none;  
+}
+.hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);  
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    /* height: 175px; */
+    height: 9.115vw;
+    /* padding: 0px 195px 0px 195px; */
+    padding: 0 10.156vw 0 10.156vw;
+}
+.contacts .contacts_logo {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts .contacts_logo .logo img {
+    /* margin: 32px 0px 15px 195px;  */
+    margin: 1.667vw 0 0.781vw 0; 
+    /* width: 280px; */
+    width: 14.583vw;
+    /* height: 126px; */
+    height: 6.563vw;
+}
+.contacts .contacts_logo .logo_text {
+    /* margin: 71px 0px 55px 44px; */
+    margin: 3.698vw 0 2.865vw 2.292vw;
+    /* width: 144px; */
+    width: 7.6vw;
+    /* height: 47px; */
+    height: 2.448vw;
+    color: #282828;
+    font-family: "Museo Sans Cyrl 300";
+    /* font-size: 14px; */
+    font-size: 0.729vw;
+    font-weight: 400;
+    /* letter-spacing: 0.7px; */
+    letter-spacing: 0.036vw;
+}
+.contacts .contacts_booking {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts .contacts_booking .location_pic img {
+    /* margin: 56px 23px 39px 139px; */
+    margin: 2.917vw 1.198vw 2.031vw 0vw;
+    /* width: 78px; */
+    width: 4.063vw;
+    /* height: 78px; */
+    height: 4.063vw;
+
+}
+.contacts .contacts_booking .location_text_descr {
+    /* margin: 61px 0px 17px 23px; */
+    margin: 3.177vw 0vw 0vw 1.198vw;
+    /* width: 207px; */
+    /* width: 10.781vw; */
+    /* height: 36px; */
+    /* height: 1.875vw; */
+    /* letter-spacing: 0.8px; */
+    letter-spacing: 0.042vw;
+    font-weight: 400;
+}
+.contacts .contacts_booking .location_text_descr .location_text_descr_strong {
+    /* font-size: 16px; */
+    font-size: 0.833vw;
+    font-family: "Museo Sans Cyrl 700";
+    /* line-height: 18px; */
+    line-height: 0.938vw;
+}
+.contacts .contacts_booking .location_text_descr .location_text_descr_normal {
+    /* font-size: 16px; */
+    font-size: 0.833vw;
+    font-family: "Museo Sans Cyrl 300";
+    /* line-height: 21px; */
+    line-height: 1.094vw;
+}
+.contacts .contacts_booking .location_text .location_text_link .map_link {
+    display: block;
+    position: relative;
+    /* margin: 17px 0px 50px 23px; */
+    margin: 0.885vw 0vw 2.604vw 1.198vw;
+    /* width: 142px;
+    height: 9px; */
+    color: #ff6078;
+    font-family: "Museo Sans Cyrl 500";
+    /* font-size: 12px; */
+    font-size: 0.625vw;
+    font-weight: 400;
+    /* line-height: 0.01px; */
+    line-height: 0.001vw;
+    text-transform: uppercase;
+    /* letter-spacing: 1.2px; */
+    letter-spacing: 0.063vw;
+    text-decoration: none;
+}
+.map_link:before {
+    display: block;
+    position: absolute;
+    content: "";
+    /* width: 141px; */
+    width: 7.344vw;
+    /* border-top: 1px solid #ff6078; */
+    border-top: 0.052vw solid #ff6078;
+    /* left: 0px;
+    top: 12px; */
+    left: 0vw;
+    top: 0.625vw;
+}
+.psche_pics {
+    /* margin: 54px 0px 38px 64px; */
+    margin: 2.813vw 0 1.979vw 3.333vw;
+}
+.psche_img_phone {
+    display: block;
+    position: relative;
+    /* width: 32px;
+    height: 32px; */
+    width: 1.667vw;
+	height: 1.667vw;
+}
+.psche_img_phone img {
+    position: absolute;
+    /* width: 15px;
+    height: 15px; */
+    width: 0.781vw;
+    height: 0.781vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.psche_img_phone a:before {
+    position: absolute;
+    content: "";
+    /* width: 32px;
+    height: 32px; */
+    width: 1.667vw;
+	height: 1.667vw;
+	background: white;
+	/* -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; */
+    /* top: -6.5px;
+    border-radius: 16px; */
+    /* top: -0.339vw; */
+    border-radius: 0.833vw;
+    /* box-shadow: 0 3px 20px rgba(68, 68, 68, 0.11); */
+    box-shadow: 0 0.156vw 1.042vw rgba(68, 68, 68, 0.11);
+    z-index: -1;
+}
+.psche_img_time {
+    display: block;
+    position: relative;
+    /* width: 32px;
+    height: 32px; */
+    width: 1.667vw;
+	height: 1.667vw;
+    margin-top: 0.573vw;
+}
+.psche_img_time img {
+    position: absolute;
+        /* width: 15px;
+    height: 15px; */
+    width: 0.781vw;
+    height: 0.781vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.psche_img_time a:before {
+    position: absolute;
+    content: "";
+    /* width: 32px;
+    height: 32px; */
+    width: 1.667vw;
+	height: 1.667vw;
+	background: white;
+	/* -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; */
+    /* top: -6.5px;
+    border-radius: 16px; */
+    /* top: -0.339vw; */
+    border-radius: 0.833vw;
+    /* box-shadow: 0 3px 20px rgba(68, 68, 68, 0.11); */
+    box-shadow: 0 0.156vw 1.042vw rgba(68, 68, 68, 0.11);
+    z-index: -1;
+}
+
+.psche_text {
+    /* margin: 53px 0px 49px 0px; */
+    margin: 2.760vw 0 2.552vw 0;
+}
+.psche_text .psche_text_one {
+    position: relative;
+    /* width: 197px; */
+    /* width: 10.260vw; */
+    /* height: 11px; */
+    /* height: 0.573vw; */
+    /* margin-left: 27px; */
+    margin-left: 1.406vw;
+    color: #282828;
+    font-family: "Museo Sans Cyrl 500";
+    /* font-size: 12px; */
+    font-size: 0.625vw;
+    font-weight: 400;
+    /* letter-spacing: 0.96px; */
+    letter-spacing: 0.050vw;
+}
+.psche_text_one:before {
+    position: absolute;
+    content:'';
+    /* width: 6px;
+    height: 6px;
+    border-radius: 20px; */
+    width: 0.313vw;
+    height: 0.313vw;
+    border-radius: 1.042vw;
+	/* background: #27b24b; */
+    /* border: 2px solid #27b24b; */
+    /* box-shadow: 0 0 7px rgba(79, 160, 55, 0.61); */
+    box-shadow: 0 0 0.365vw rgba(79, 160, 55, 0.61);
+    background-color: #27b24b;
+    /* top: 3px;
+    left: -15px; */
+    top: 0.156vw;
+    left: -0.781vw;
+}
+.psche_text .psche_text_two {
+    /* width: 212px; */
+    /* width: 11.042vw; */
+    /* height: 17px; */
+    /* height: 0.885vw; */
+    /* margin-top: 10px; */
+    margin-top: 0.521vw;
+    /* margin-left: 11px; */
+    margin-left: 0.573vw;
+    /* margin: 10px 0px 0px 11px; */
+    color: #282828;
+    font-family: "Museo Sans Cyrl 500";
+    /* font-size: 24px; */
+    font-size: 1.250vw;
+    font-weight: 400;
+    /* line-height: 18px; */
+    line-height: 0.938vw;
+    /* letter-spacing: 0.6px; */
+    letter-spacing: 0.031vw;
+}
+.psche_text .psche_text_three {
+    /* width: 144px; */
+    /* height: 12px; */
+    /* margin-top: 10px;
+    margin-left: 12px; */
+    margin-top: 0.521vw;
+    margin-left: 0.625vw;
+    /* margin-top: 1.094vw; */
+    /* margin: 21px 0px 49px 12px ; */
+    color: #282828;
+    /* font-size: 16px; */
+    font-size: 0.833vw;
+    font-weight: 400;
+    /* line-height: 21px; */
+    /* line-height: 1.094vw; */
+    font-family: "Museo Sans Cyrl 300";
+    /* letter-spacing: 0.8px; */
+    letter-spacing: 0.042vw;
+
+}
+.psche_text .psche_text_three strong {
+    font-family: "Museo Sans Cyrl 700";
+}
+.btn {
+    position: relative;
+    /* width: 229px;
+    height: 62px;
+    margin: 62px 0px 49px 64px;
+    border-radius: 30px; */
+    width: 11.927vw;
+    height: 3.229vw;
+    margin: 3.229vw 0 2.552vw 3.333vw;
+    border-radius: 1.563vw;
+    background-color: #fefcfb;
+    border: 0;
+    cursor: pointer;
+}
+.btn_text {
+    position: absolute;
+    /* margin-left: 35px; */
+    /* margin: 1.354vw 0 1.250vw 1.823vw; */
+    color: #1f1d1d;
+    font-family: "Museo Sans Cyrl 500";
+    /* font-size: 15px; */
+    font-size: 0.781vw;
+    font-weight: 400;
+    /* line-height: 24px; */
+    /* line-height: 1.250vw; */
+    /* Text style for "Записаться" */
+    /* letter-spacing: 0.75px; */
+    letter-spacing: 0.039vw;
+    text-decoration: none;
+    /* top: 22px;
+    left: 56px; */
+    top: 1.146vw;
+    left: 2.917vw;
+    z-index: 2;
+}
+.btn img {
+    position: absolute;
+    /* top: -2px;
+    left: -28px; */
+    top: -0.104vw;
+    left: -1.458vw;
+    /* top: 1.094vw;
+    left: 1.354vw; */
+    /* width: 20px;
+    height: 20px; */
+    width: 1.042vw;
+    height: 1.042vw;
+    z-index: 1;
+}
+.btn:focus, .btn:active {
+    outline: none;
+}
+.btn:before {
+    position: absolute;
+    content: '';
+    /* width: 229px;
+    height: 62px;
+    border-radius: 30px; */
+    width: 11.927vw;
+    height: 3.229vw;
+    border-radius: 1.563vw;
+    background-color: #ebeaea;
+    top: 50%;
+    left: 50%;
+    /* margin-top: 3px; */
+    margin-top: 0.156vw;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.btn:hover{
+    background-color: #ebeaea;
+}
+.wave {
+    position: absolute;
+    /* width: 100%; */
+    background: url('../img/wave.png') center center/cover no-repeat;
+    width: 100vw;
+    height: 8.021vw;
+    /* bottom: -53px; */
+    bottom: -2.760vw;
+    left: 0;
+    z-index: 5;
+}
+.wave img {
+    position: absolute;
+    cursor: pointer;
+    /* height: 64px;
+    width: 32px; */
+    height: 3.333vw;
+    width: 1.667vw;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.parallax_img_one {
+    position: fixed;
+    /* top: 272px;
+    left: 116px;
+    width: 367px;
+    height: 340px; */
+    top: 14.167vw;
+    left: 6.042vw;
+    width: 19.115vw;
+    height: 17.708vw;
+    background: url('../img/vector_smart_one.png') center center / cover no-repeat;
+    /* background-attachment: fixed; */
+    /* transition: 0.5s all; */
+    z-index: -2;
+}
+.parallax_img_two {
+    position: fixed;
+    /* top: 628px;
+    left: 983px;
+    width: 129px;
+    height: 121px; */
+    top: 32.708vw;
+    left: 51.198vw;
+    width: 6.719vw;
+    height: 6.302vw;
+    background: url('../img/vector_smart_two.png') center center / cover no-repeat;
+    /* background-attachment: fixed; */
+    /* transition: 0.5s all; */
+    z-index: 0;
+}
+.parallax_img_three {
+    position: fixed;
+    /* top: 83px;
+    left: 1773px;
+    width: 252px;
+    height: 266px; */
+    top: 4.323vw;
+    left: 92.344vw;
+    width: 13.125vw;
+    height: 13.854vw;
+    background: url('../img/vector_smart_three.png') center center / cover no-repeat;
+    /* background-attachment: fixed; */
+    /* transition: 0.5s all; */
+    z-index: -2;
+}
+.main_header {
+    /* width: 686px;  
+    height: 206px;
+    margin: 106px 0 0 295px; */
+    width: 35.729vw;  
+    height: 10.729vw;
+    margin: 5.521vw 0 0 15.365vw;
+    color: #282828;
+    /* font-size: 48px; */
+    font-size: 2.500vw;
+    font-weight: 400;
+    /* line-height: 55px; */
+    line-height: 2.865vw;
+    font-family: "Museo Sans Cyrl 300";
+}
+.main_header strong {
+    font-family: "Museo Sans Cyrl 700";
+}
+.main_list_wrapper {
+    /* margin: 60px 0 0 333px; */
+    margin: 3.125vw 0 0 17.344vw;
+}
+.main_item {
+    position: relative;
+    color: #282828;
+    font-family: "Museo Sans Cyrl 300";
+    /* font-size: 18px; */
+    font-size: 0.938vw;
+    font-weight: 400;
+    /* line-height: 36px;
+    letter-spacing: 0.45px; */
+    line-height: 1.875vw;
+    letter-spacing: 0.023vw;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.main_item:before {
+    position: absolute;
+    content: '';
+    display: block;
+    /* width: 8px;
+    height: 8px; */
+    width: 0.417vw;
+    height: 0.417vw;
+    box-shadow: 0 0.052vw 0.677vw rgba(239, 148, 153, 0.38);
+    border: 0.208vw solid #f7f7fb;
+    /* border-radius: 20px;
+    top: 11px;
+    left: -28px; */
+    background-color: #ef9499;
+    border-radius: 1.042vw;
+    top: 0.573vw;
+    left: -1.458vw;
+}
+.btn_main {
+    display: block;
+    position: relative;
+    /* margin: 58px 0 0 295px;
+    width: 379px;
+    height: 86px;
+    box-shadow: 0 7px 27px rgba(241, 131, 131, 0.57);
+    border-radius: 43px; */
+    margin: 3.021vw 0 0 15.365vw;
+    width: 19.740vw;
+    height: 4.479vw;
+    box-shadow: 0 0.365vw 1.406vw rgba(241, 131, 131, 0.57);
+    border-radius: 2.240vw;
+    background-color: #d7747a;
+    cursor: pointer;
+    border: 0;
+}
+.btn_main:before {
+    position: absolute;
+    content: '';
+    /* width: 379px;
+    height: 86px;
+    border-radius: 43px; */
+    width: 19.740vw;
+    height: 4.479vw;
+    border-radius: 2.240vw;
+    background-image: linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%);
+    /* top: -4px;
+    left: 0px; */
+    top: -0.208vw;
+    left: 0vw;
+    z-index: 1;
+}
+.btn_main:after {
+    position: absolute;
+    content: '';
+    /* width: 371px;
+    height: 79px;
+    border-radius: 39px; */
+    width: 19.323vw;
+    height: 4.115vw;
+    border-radius: 2.031vw;
+    background-image: linear-gradient(to top, rgba(241, 153, 157, 0.47) 0%, rgba(252, 182, 182, 0.99) 98%, #fcb6b6 100%);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.btn_main .btn_main_text {
+    position: absolute;
+    /* text-shadow: 0 1px 5px rgba(210, 110, 116, 0.49); */
+    text-shadow: 0 0.052vw 0.260vw rgba(210, 110, 116, 0.49);
+    color: #ffffff;
+    font-family: "Museo Sans Cyrl 700";
+    /* font-size: 14px; */
+    font-size: 0.729vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* letter-spacing: 1.68px; */
+    letter-spacing: 0.087vw;
+    text-decoration: none;
+    /* top: 22px;
+    left: 41px; */
+    top: 1.146vw;
+    left: 2.135vw;
+    z-index: 3;
+}
+.btn_main img {
+    position: absolute;
+    /* width: 272px;
+    height: 70px; */
+    height: 3.646vw;
+    width: 14.167vw;
+    top: -1.042vw;
+    left: 10.2vw;
+    z-index: 3;
+}
+.btn_main:focus, .btn_main:active {
+    outline: none;
+}
+.btn_main:hover:after{
+    background-color: #d7747a;
+}
+.card {
+    z-index: 1;
+}
+.card img {
+    /* width: 176px;
+    height: 236px; */
+    width: 9.167vw;
+    height: 12.292vw;
+    /* margin: 370px 0 0 -245px;  */
+    margin: 19.271vw 0 0 -12.760vw; 
+}
+.girl {
+    z-index: 3;
+}
+.girl img{
+    /* width: 868px;
+    height: 760px;
+    margin: 34px 0 0 -200px; */
+    margin: 1.771vw 0 0 -10.417vw;
+    width: 45.208vw;
+    height: 39.583vw;
+}
+.pulse {
+    display: block;
+    position: relative;
+    /* margin: -60px 0 0 -95px; */
+    margin: -3.125vw 0 0 -4.948vw;
+    /* width: 40px;
+    height: 40px; */
+    width: 2.083vw;
+    height: 2.083vw;
+    background: #d7747a;;
+    border-radius: 50%;
+    z-index: 5;
+}
+.pulse:before {
+    content: '';
+    display: block;
+    position: absolute;
+    align-items: center;
+    /* width: 40px;
+    height: 40px; */
+    width: 2.083vw;
+    height: 2.083vw;
+    background-image: linear-gradient(to top, rgba(241, 153, 157, 0.47) 0%, rgba(252, 182, 182, 0.99) 98%, #fcb6b6 100%);
+    border-radius: 50%;
+    animation: radial-pulse 1s infinite;
+    /* top: -1px;
+    left: -1px; */
+    top: -0.052vw;
+    left: -0.052vw;
+    z-index: 1;
+    cursor: pointer;
+}
+.pulse_text {
+    display: block;
+    position: absolute;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    /* font-size: 24px; */
+    font-size: 1.250vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+@keyframes radial-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(215,116,147, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 40px rgba(215,116,147, 0);
+    }
+}
+.info_on {
+    display: block;
+    position: relative;
+    /* margin: -220px 0 0 -90px; */
+    margin: -11.458vw 0 0 -4.688vw;
+    z-index: 4;
+}
+.info_on:before {
+    position: absolute;
+    content: '';
+    background: url('../img/info_on.png') center center / cover no-repeat;
+    /* width: 188px;
+    height: 216px; */
+    width: 9.792vw;
+    height: 11.250vw;
+    z-index: 1;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5)
+}
+.modal__content {
+    position: relative;
+    /* width: 738px;
+    height: 669px; */
+    width: 38.438vw;
+    height: 34.844vw;
+    background: url('../img/pop_up_form.png') center center / cover no-repeat;
+    /* overflow-y: auto; */
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal__close {
+    position: absolute;
+    /* top: 38px;
+    right: 41px;
+    width: 12px;
+    height: 12px;
+    font-size: 21px; */
+    top: 1.979vw;
+    right: 2.135vw;
+    width: 0.625vw;
+    height: 0.625vw;
+    font-size: 1.094vw;
+    opacity: 0.5;
+    color: #8a97a1;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer
+}
+.modal__title {
+    /* margin: 67px 0 0 0; */
+    margin: 3.490vw 0 0 0;
+    text-align: center;
+    color: #282828;
+    font-family: "Museo Sans Cyrl 300";
+    font-weight: 400;
+    /* font-size: 36px; */
+    font-size: 1.875vw;
+}
+.modal__title strong {
+    font-family: "Museo Sans Cyrl 700";
+}
+.modal__subtitle {
+    /* margin: 19px 105px 0 105px; */
+    margin: 0.990vw 5.469vw 0 5.469vw;
+    text-align: center;
+    /* width: 528px;
+    height: 54px; */
+    width: 27.500vw;
+    height: 2.813vw;
+    color: #282828;
+    font-family: "Museo Sans Cyrl 300";
+    /* font-size: 16px; */
+    font-size: 0.833vw;
+    font-weight: 400;
+    /* letter-spacing: 0.4px; */
+    letter-spacing: 0.021vw;
+}
+.modal__input {
+    display: block;
+    /* margin: 16px auto 16px auto; */
+    margin: 0.833vw auto 0.833vw auto;
+    text-align: center;
+    outline: 0;
+    /* width: 500px;
+    height: 80px;
+    border-radius: 40px; */
+    width: 26.042vw;
+    height: 4.167vw;
+    border-radius: 2.083vw;
+    background-color: #ffffff;
+    /* border: 1px solid #fbeeef; */
+    border: 0.052vw solid #fbeeef;
+    color: #989797;
+    font-family: "Museo Sans Cyrl 300";
+    /* font-size: 18px; */
+    font-size: 0.938vw;
+    font-weight: 400;
+    /* line-height: 24px;
+    letter-spacing: 0.45px; */
+    line-height: 1.250vw;
+    letter-spacing: 0.023vw;
+}
+.modal__input_first {
+    /* margin-top: 37px; */
+    margin-top: 1.927vw;
+}
+.btn_modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin: 25px auto; */
+    margin: 1.302vw auto;
+    position: relative;
+    /* margin: 58px 0 0 295px;
+    box-shadow: 0 7px 27px rgba(241, 131, 131, 0.57);
+    border-radius: 43px; */
+    /* width: 491px;
+    height: 76px; */
+    width: 25.573vw;
+    height: 3.958vw;
+    box-shadow: 0 0.365vw 1.406vw rgba(241, 131, 131, 0.57);
+    /* border-radius: 35px; */
+    border-radius: 1.823vw;
+    background-color: #d7747a;
+    cursor: pointer;
+    border: 0;
+}
+.btn_modal_text {
+    /* margin: 22px 0 0 36px;
+    text-shadow: 0 1px 5px rgba(210, 110, 116, 0.49); */
+    margin: 1.146vw 0 0 1.875vw;
+    text-shadow: 0 0.052vw 0.260vw rgba(210, 110, 116, 0.49);
+    color: #ffffff;
+    font-family: "Museo Sans Cyrl 700";
+    /* font-size: 18px; */
+    font-size: 0.938vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* letter-spacing: 2.16px; */
+    letter-spacing: 0.113vw;
+    text-decoration: none;
+    z-index: 3;
+}
+.btn_modal img {
+    /* margin: 9px -90px 17px 0; */
+    margin: 0.469vw -4.688vw 0.885vw 0;
+    /* height: 52px;
+    width: 199px; */
+    height: 2.708vw;
+    width: 10.365vw;
+    z-index:3
+}
+.btn_modal:before {
+    position: absolute;
+    content: '';
+    /* width: 491px;
+    height: 76px;
+    border-radius: 35px; */
+    width: 25.573vw;
+    height: 3.958vw;
+    border-radius: 1.823vw;
+    background-image: linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%);
+    /* top: -4px;
+    left: 0px; */
+    top: -0.208vw;
+    left: 0vw;
+    z-index: 1;
+}
+.btn_modal:after {
+    position: absolute;
+    content: '';
+    /* width: 491px;
+    height: 70px;
+    border-radius: 35px; */
+    width: 25.573vw;
+    height: 3.646vw;
+    border-radius: 1.823vw;
+    background-image: linear-gradient(to top, rgba(241, 153, 157, 0.47) 0%, rgba(252, 182, 182, 0.99) 98%, #fcb6b6 100%);
+    top: -0.104vw;
+    left: 0;
+    z-index: 2;
+}
+.btn_modal:focus, .btn_modal:active {
+    outline: none;
+}
+.btn_modal:hover:after{
+    background-color: #d7747a;
+}
+
+/* ============================================= Media queries ====================================================== */ 
+@media screen and (max-width: 992px) {
+    .menu {
+        display: none;
+    }
+    .menu::before {
+        display: none;
+    }
+    .contacts .contacts_booking {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        z-index: 6;
+    }
+    .menu_active {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        padding: 20px 20px;
+        background-color: #ffffff;
+        opacity: 0.95;
+        z-index: 6;
+    }
+    .menu_active .menu_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu_active .menu_item {
+        margin-top: 30px;
+        line-height: 100%;
+        transition: 0.9s all; 
+    }
+    .menu_active .menu_item .menu_link {
+        color: #282828;
+        font-size: 16px;
+        /* font-size: 0.781vw; */
+        font-weight: 400;
+        /* letter-spacing: 0.75px; */
+        letter-spacing: 0.039vw;
+        font-family: "Museo Sans Cyrl 300";
+        text-decoration: none;
+    }
+    .girl {
+        margin-top: 3.400vw;
+    }
+}
+

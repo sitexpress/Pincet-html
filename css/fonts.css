@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Appetite New';
+    src: local('Appetite New'), local('AppetiteNew'),
+        url('../fonts/AppetiteNew.woff2') format('woff2'),
+        url('../fonts/AppetiteNew.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 100';
+    src: local('Museo Sans Cyrl 100'), local('MuseoSansCyrl-100'),
+        url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-100.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 900';
+    src: local('Museo Sans Cyrl 900'), local('MuseoSansCyrl-900'),
+        url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-900.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 500';
+    src: local('Museo Sans Cyrl 500'), local('MuseoSansCyrl-500'),
+        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 300';
+    src: local('Museo Sans Cyrl 300'), local('MuseoSansCyrl-300'),
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 700';
+    src: local('Museo Sans Cyrl 700'), local('MuseoSansCyrl-700'),
+        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
